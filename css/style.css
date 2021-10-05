@@ -1,6 +1,7 @@
 :root {
     --hfont: 'Anton', sans-serif;
     --pfont: 'Nunito', sans-serif;
+    --over8: rgba(21, 0, 53, 0.8);
     --bcol: #ff39dc;
     --bacol1: #0b001b;
     --bacol2: #150035;
@@ -37,7 +38,7 @@ ul {
     -webkit-background-clip: text;
 }
 
-#heading h4 {
+.common-heading {
     font-family: var(--hfont);
     font-size: 48px;
     font-weight: 400;
@@ -47,6 +48,36 @@ ul {
     background: linear-gradient(to bottom, #FDB125 0%, #E07E1E 48%, #FCB100 52%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+.common-btn {
+    font-family: var(--hfont);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    transition: all linear .4s;
+    text-shadow: 0 5px #5813b8;
+    border-radius: 5px;
+    box-shadow: 0px 5px #3a0090;
+    background: #570DC8;
+    background: -webkit-linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
+    background: -moz-linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
+    background: linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.common-btn:hover {
+    background: var(--hovcol);
+    color: #fff;
+    box-shadow: 0px 5px #661355;
+    text-shadow: 0 5px #661355;
 }
 
 /* ==============
@@ -95,32 +126,14 @@ ul {
 
 .navbar .signup,
 .navbar .login {
-    font-family: var(--hfont);
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
     padding: 0 30px;
     line-height: 50px;
-    transition: all linear .4s;
-    border-radius: 5px;
-    box-shadow: 0px 5px #3a0090;
-    background: #570DC8;
-    background: -webkit-linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
-    background: -moz-linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
-    background: linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
-    -webkit-transition: all linear .4s;
-    -moz-transition: all linear .4s;
-    -ms-transition: all linear .4s;
-    -o-transition: all linear .4s;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
 }
 
 .navbar .signup:hover,
 .navbar .login:hover {
     background: var(--hovcol);
+    color: #fff;
     box-shadow: 0px 5px #661355;
 }
 
@@ -229,15 +242,17 @@ ul {
 }
 
 #game-list .step {
-    display: flex;
-    position: absolute;
-    top: 0%;
+    top: -260px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 #game-list .step .step-item {
-    width: 33.33%;
+    /* width: 33.33%; */
     background: #570DC8;
     background: -webkit-linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
     background: -moz-linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
@@ -262,7 +277,80 @@ ul {
     font-weight: 400;
 }
 
+#game-list .game-item {
+    margin-top: 50px;
+}
+
+#game-list .game-item img {}
+
+#game-list .game-item .overlay {
+    background: var(--over8);
+    top: -100%;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#game-list .game-item:hover .overlay {
+    top: 0;
+}
+
+#game-list .game-item .overlay h4 {
+    margin-top: 150px;
+    margin-bottom: 60px !important;
+    font-family: var(--hfont);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#game-list .game-item .overlay a {
+    padding: 12px 37px;
+}
+
 
 /* ==================
   Game list Css Ends
+================ */
+
+
+/* ==================
+  Spin Css Starts
+================ */
+
+
+#spin {
+
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    background: var(--bacol2);
+}
+
+#spin .spin-image {}
+
+#spin .spin-image img {}
+
+#spin .spin-text {}
+
+#spin .spin-text h4 {
+    margin-top: 70px;
+}
+
+#spin .spin-text p {
+    font-family: var(--pfont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px !important;
+}
+
+#spin .spin-text a {
+    padding: 10px 38px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+/* ==================
+  Spin Css Ends
 ================ */
