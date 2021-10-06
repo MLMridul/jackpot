@@ -323,7 +323,7 @@ ul {
 #spin {
 
     padding-top: 100px !important;
-    padding-bottom: 50px !important;
+    padding-bottom: 100px !important;
     background: var(--bacol2);
 }
 
@@ -335,6 +335,7 @@ ul {
 
 #spin .spin-text h4 {
     margin-top: 70px;
+    margin-bottom: 50px !important;
 }
 
 #spin .spin-text p {
@@ -354,3 +355,32 @@ ul {
 /* ==================
   Spin Css Ends
 ================ */
+
+/* =======================
+  Pricing Plan Css Starts
+===================== */
+
+#pricing {
+    padding-top: 100px !important;
+    padding-bottom: 80px !important;
+    background: var(--bacol1);
+}
+
+#pricing .featured {}
+
+#pricing .featured h4 {}
+
+#pricing .pricing-header {}
+
+#pricing .pricing-header h4 {}
+
+
+#pricing .monthly-price {}
+
+#pricing .feature-list {}
+
+#pricing .pricing-footer {}
+
+/* =====================
+  Pricing Plan Css Ends
+==================== */
