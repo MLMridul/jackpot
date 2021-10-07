@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.classycountdown.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,12 +18,12 @@
 
 </head>
 
-<body><i class="fas fa-caret-down"></i>
+<body>
 
 
     <!-- ============
-    Navbar Start
-============ -->
+        Navbar Start
+    ============ -->
 
     <nav class="navbar navbar-expand-lg w-100">
         <div class="container">
@@ -316,20 +317,23 @@
 
                 <div class="col-lg-7">
                     <div class="service-part">
-                        <header id="heading">
-                            <h4 class="mb-0 text-capitalize common-heading">Our Pricing Plan</h4>
+                        <header id="heading" class="position-relative">
+                            <h4 class="mb-0 text-capitalize common-heading">Frequently Ask Questions</h4>
                         </header>
                         <div class="service-item">
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
                                             01. How can play these games (for begineer)?
+                                            <div class="icon">
+                                                <i class="fas fa-caret-down"></i>
+                                            </div>
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                    <div id="collapseOne" class="accordion-collapse collapse"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -345,6 +349,9 @@
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
                                             02. If I play games and lost by any chance, How I’ll pay?
+                                            <div class="icon">
+                                                <i class="fas fa-caret-down"></i>
+                                            </div>
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse"
@@ -362,7 +369,9 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                             aria-expanded="false" aria-controls="collapseThree">
-                                            03. What are the benefits for gambiling?
+                                            03. What are the benefits for gambiling? <div class="icon">
+                                                <i class="fas fa-caret-down"></i>
+                                            </div>
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse"
@@ -377,13 +386,16 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                            aria-expanded="false" aria-controls="collapseFour">
-                                            04. What are the benefits for gambiling?
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="true"
+                                            aria-controls="collapseFour">
+                                            01. How can play these games (for begineer)?
+                                            <div class="icon">
+                                                <i class="fas fa-caret-down"></i>
+                                            </div>
                                         </button>
                                     </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                    <div id="collapseFour" class="accordion-collapse collapse show"
                                         aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -399,7 +411,50 @@
                 </div>
 
                 <div class="col-lg-5">
-                    <div class="tournament"></div>
+                    <div class="tournament">
+                        <header id="heading" class="position-relative">
+                            <h4 class="mb-0 text-capitalize common-heading">Today’s Tournaments</h4>
+                        </header>
+                        <div class="tournament-item">
+
+                            <div class="time-remaining d-flex justify-content-between">
+                                <div class="time-heading">
+                                    <h5 class="mb-0 text-white">Time Remaining:</h5>
+                                </div>
+                                <div id="countdown-gampang"></div>
+                            </div>
+
+                            <div class="country-list">
+                                <ul class="ps-0 text-white">
+                                    <li class="d-flex justify-content-between">
+                                        <h5 class="mb-0">01. Rozina Khan</h5>
+                                        <img src="images/003-bangladesh.png" alt="Bangladesh">
+                                        <p class="mb-0">&dollar;365.25</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <h5 class="mb-0">02. Gozina Hezzez</h5>
+                                        <img src="images/002-united-states-of-america.png" alt="USA">
+                                        <p class="mb-0">&dollar;305.25</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <h5 class="mb-0">03. Redwan Rizaj</h5>
+                                        <img src="images/004-portugal.png" alt="Portugal">
+                                        <p class="mb-0">&dollar;295.25</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <h5 class="mb-0">04. Boltu Khan</h5>
+                                        <img src="images/005-iran.png" alt="Iran">
+                                        <p class="mb-0">&dollar;365.25</p>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <h5 class="mb-0">05. Omer Rinki</h5>
+                                        <img src="images/001-england.png" alt="England">
+                                        <p class="mb-0">&dollar;365.25</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -410,9 +465,54 @@
         Services  Ends
     ================= -->
 
+    <!-- =================
+        Subscribe  Starts
+    ================= -->
+
+    <section id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="sub text-white">
+                        <h4 class="mb-0">Subscribe for Offers</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Your e-mail here"
+                                aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                            <div class="input-group-text" id="btnGroupAddon2"><i class="fab fa-telegram-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <div class="payment text-white">
+                        <h4 class="mb-0">Payment Method</h4>
+                        <ul class="ps-0 d-flex">
+                            <li><img src="images/payment-1.png" alt="Payment-1"></li>
+                            <li><img src="images/payment-2.png" alt="Payment-2"></li>
+                            <li><img src="images/payment-3.png" alt="Payment-3"></li>
+                            <li><img src="images/payment-4.png" alt="Payment-4"></li>
+                            <li><img src="images/payment-5.png" alt="Payment-5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================
+        Subscribe  Ends
+    ================= -->
+
+
+
+
 
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.knob.min.js"></script>
+    <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="js/jquery-countdowngampang.min.js"></script>
     <script src="js/custom.js"></script>
 
 </body>
