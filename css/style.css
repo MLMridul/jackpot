@@ -84,6 +84,115 @@ ul {
   Common Css Ends
 ============== */
 
+/* ====================
+  Preloader Css Starts
+=================== */
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bacol2);
+    z-index: 9999999;
+}
+
+.loader {
+    width: 110px;
+    height: 35px;
+    margin: 50px auto 0;
+}
+
+.loader .line {
+    background: linear-gradient(#8c0921, #e01d3d, #8c0921);
+    height: 35px;
+    width: 7px;
+    border-radius: 10px;
+    display: inline-block;
+    animation: animate 1s ease infinite;
+}
+
+.loader .line:nth-child(1),
+.loader .line:nth-child(10) {
+    animation-delay: 0.8s;
+}
+
+.loader .line:nth-child(2),
+.loader .line:nth-child(9) {
+    animation-delay: 0.6s;
+}
+
+.loader .line:nth-child(3),
+.loader .line:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+.loader .line:nth-child(4),
+.loader .line:nth-child(7) {
+    animation-delay: 0.2s;
+}
+
+.loader .line:nth-child(5),
+.loader .line:nth-child(6) {
+    animation-delay: 0s;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+/* ==================
+  Preloader Css Ends
+=================== */
+
+/* ====================
+  ScrollTop Css Starts
+==================== */
+
+.scrollTop {
+    width: 40px;
+    height: 40px;
+    background: #8a3bed;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.scrollTop i {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* ==================
+  ScrollTop Css Ends
+=================== */
+
+
+
+
 /* ================
   Navbar Css Starts
 ================ */

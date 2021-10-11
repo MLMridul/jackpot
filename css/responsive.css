@@ -9,6 +9,40 @@
     --hovcol: #ff39dc;
 }
 
+@media(max-width:991px) {
+
+    .navbar {
+        position: absolute;
+        top: 0;
+    }
+
+    .navbar .navbar-toggler {
+        color: #fff;
+        background: #570DC8;
+        background: -webkit-linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
+        background: -moz-linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
+        background: linear-gradient(to right, #570DC8 0%, #9E4EFC 100%);
+        margin-top: 60px;
+    }
+
+    .navbar #navbarSupportedContent {
+        background: rgba(0, 0, 0, 0.507);
+    }
+
+    .navbar .navbar-brand {
+        position: static !important;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding: 0 20px;
+    }
+
+    .navbar .signup,
+    .navbar .login {
+        display: none;
+    }
+}
+
 /*  ==========================
     Extra Small Device Starts
 ========================== */
@@ -21,16 +55,17 @@
 
     /*  Navbar Starts  */
 
-
-    /* .navbar {
+    /* 
+    .navbar {
         position: fixed;
         top: 0;
         background: rgba(0, 0, 0, 0.562);
     }
+*/
 
     .navbar .navbar-brand {
-        position: static !important;
-    } */
+        width: 220px;
+    }
 
     /*  Navbar Ends  */
 
