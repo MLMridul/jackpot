@@ -285,7 +285,7 @@ ul {
 
 #game-list .game-item .overlay {
     background: var(--over8);
-    top: -100%;
+    top: -110%;
     transition: all linear .4s;
     -webkit-transition: all linear .4s;
     -moz-transition: all linear .4s;

@@ -1,0 +1,390 @@
+:root {
+    --hfont: 'Anton', sans-serif;
+    --pfont: 'Nunito', sans-serif;
+    --over8: rgba(21, 0, 53, 0.8);
+    --bcol: #ff39dc;
+    --bacol1: #0b001b;
+    --bacol2: #150035;
+    --hcol: #944bff;
+    --hovcol: #ff39dc;
+}
+
+/*  ==========================
+    Extra Small Device Starts
+========================== */
+
+@media(max-width:575px) {
+
+    .common-heading {
+        font-size: 28px !important;
+    }
+
+    /*  Navbar Starts  */
+
+
+    /* .navbar {
+        position: fixed;
+        top: 0;
+        background: rgba(0, 0, 0, 0.562);
+    }
+
+    .navbar .navbar-brand {
+        position: static !important;
+    } */
+
+    /*  Navbar Ends  */
+
+    /* Banner Starts  */
+
+    #banner {
+        padding: 100px 0;
+        padding-top: 150px;
+    }
+
+    #banner .banner-text h1 {
+        font-size: 200px;
+    }
+
+
+    #banner .banner-text h1 {
+        margin-top: -30px;
+    }
+
+    #banner .banner-text h4 {
+        padding-right: 150px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /*  Banner Ends  */
+
+
+    /*  Games List Starts  */
+
+    #game-list {
+        padding-top: 100px;
+    }
+
+    #game-list .step {
+        position: relative !important;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+    }
+
+    #game-list .step .step-item {
+        /* margin-bottom: 5px; */
+    }
+
+    #game-list .game-item .overlay h4 {
+        margin-top: 140px;
+    }
+
+
+    /*  Games List ENds  */
+
+
+
+    /*  Service Starts  */
+
+    #services .service-item .accordion-item .accordion-button {
+        font-size: 16px;
+        padding-right: 32px;
+    }
+
+    #services .tournament .tournament-item .time-remaining .time-heading {
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #services .ClassyCountdown-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  Service Ends  */
+
+
+    /*  Subscribe Starts  */
+    #subscribe {
+        padding-bottom: 10px;
+    }
+
+    #subscribe .payment ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #subscribe .payment ul li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*  Subscribe Ends  */
+
+
+    /*  Spin Starts  */
+
+
+    #spin {
+        padding: 50px 0 !important;
+    }
+
+    /*  Spin Ends   */
+
+    /*  Footer Starts */
+
+    #footer .about-item-3 ul li p {
+        padding-right: 30px !important;
+    }
+
+    /*  Footer Ends   */
+}
+
+
+/*  =======================
+    Extra Small Device Ends
+======================== */
+
+
+/*  =====================
+     Small Device Starts
+====================== */
+
+@media (min-width:576px) and (max-width:767px) {
+    /* Banner Starts  */
+
+    #banner {
+        padding: 100px 0;
+        padding-top: 150px;
+    }
+
+
+    /*  Banner Ends  */
+
+    /*  Pricing Stars  */
+
+
+    #pricing {
+        padding-top: 60px !important;
+    }
+
+
+    /*  Pricing Ends  */
+
+
+    /*  Game-list Starts  */
+
+    #game-list {
+        padding-top: 100px;
+    }
+
+    #game-list .step {
+        position: relative !important;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+    }
+
+    /*  Game-list Ends  */
+
+
+
+    /*  Subscribe Starts  */
+    #subscribe {
+        padding-bottom: 10px;
+    }
+
+
+
+    /*  Subscribe Ends  */
+
+
+    /*  Service Starts  */
+
+    #services {
+        padding: 60px 0 !important;
+    }
+
+    /*  Service Ends  */
+
+
+    /*  Spin Starts  */
+
+
+    #spin {
+        padding: 50px 0 !important;
+    }
+
+    /*  Spin Ends   */
+
+
+}
+
+/*  ===================
+     Small Device Ends
+==================== */
+
+
+/*  =====================
+     Medium Device Starts
+====================== */
+
+@media (min-width:768px) and (max-width:991px) {
+    /* Banner Starts  */
+
+    #banner {
+        padding: 100px 0;
+        padding-top: 150px;
+    }
+
+
+    /*  Banner Ends  */
+
+    /*  Pricing Stars  */
+
+
+    #pricing {
+        padding-top: 60px !important;
+    }
+
+
+    /*  Pricing Ends  */
+
+    /* Game-list Starts */
+
+
+    #game-list {
+        padding-top: 100px;
+    }
+
+    #game-list .step {
+        position: relative !important;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+    }
+
+    /* Game-list Ends */
+
+    /*  Service Starts  */
+
+    #services {
+        padding: 60px 0 !important;
+    }
+
+    #services .tournament .tournament-item .time-remaining #countdown-gampang .ClassyCountdown-wrapper>div {
+        width: 60px;
+        height: 60px !important;
+    }
+
+    /*  Service Ends  */
+
+
+
+    /*  Spin Starts  */
+
+
+    #spin {
+        padding: 50px 0 !important;
+    }
+
+    /*  Spin Ends   */
+}
+
+/*  ===================
+     Medium Device Ends
+==================== */
+
+
+/*  =====================
+     Large Device Starts
+====================== */
+
+@media(min-width:992px) and (max-width:1199px) {
+
+
+    /* Banner Starts */
+
+    #banner .banner-text h4 {
+        padding-left: 15px;
+    }
+
+
+    #banner .banner-text h1 {
+        font-size: 300px;
+    }
+
+    /* Banner Ends */
+
+    /*  Service Starts  */
+    #services .tournament .tournament-item .time-remaining .time-heading {
+        width: auto;
+    }
+
+    #services .tournament .tournament-item .time-remaining .time-heading h5 {
+        font-size: 16px;
+    }
+
+    #services .tournament .tournament-item .time-remaining #countdown-gampang .ClassyCountdown-wrapper>div span {
+        font-size: 17px !important;
+    }
+
+    #services .tournament .tournament-item .time-remaining #countdown-gampang .ClassyCountdown-wrapper>div {
+        width: 60px;
+        height: 60px !important;
+    }
+
+    /*  Service Ends  */
+
+    /*  Game-list Starts  */
+
+    #game-list .step {
+        margin: 0 auto;
+    }
+
+    /*  Game-list Ends  */
+
+
+    /* Footer Starts */
+
+
+    #footer .about-item-3 ul li p {
+        padding-right: 30px !important;
+
+    }
+
+    /* Footer Ends */
+}
+
+/*  ===================
+     Large Device Ends
+==================== */
+
+
+/*  ==========================
+     Extra Large Device Starts
+=========================== */
+
+@media(min-width:1200px) {}
+
+/*  ==========================
+     Extra Large Device Ends
+========================= */
