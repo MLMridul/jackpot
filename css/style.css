@@ -246,6 +246,10 @@ ul {
     box-shadow: 0px 5px #661355;
 }
 
+.active-nav .nav-link {
+    color: var(--hovcol) !important;
+}
+
 /* ================
   Navbar Css Ends
 ================ */
