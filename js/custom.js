@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+    // Wow Js
+
+    new WOW().init();
+
+    // CountDwon Js
+
     var element = $('#countdown-gampang');
     var finish_d = new Date();
 finish_d.setDate(finish_d.getDate() + 1);
