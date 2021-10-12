@@ -56,6 +56,7 @@ finish_d.setDate(finish_d.getDate() + 1);
     //     }
     // });
 
+
     // One Page Nav
 
     $('.navbar-nav').onePageNav({
