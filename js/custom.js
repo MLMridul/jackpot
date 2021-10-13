@@ -1,23 +1,9 @@
 $(document).ready(function(){
 
-    // Wow Js
+    'use strict'
 
-    new WOW().init();
-
-    // CountDwon Js
-
-    var element = $('#countdown-gampang');
-    var finish_d = new Date();
-finish_d.setDate(finish_d.getDate() + 1);
-    element.CountdownGampang({
-        rampung: finish_d,
-        theme: "flat-colors-very-wide"
-    }, function(){
-        // callback that is fired when the countdown reaches 0.
-        alert("Wes Wayahe Bro :)");
-    });
-
-
+    var scrollTop=$('.scrollTop');
+   
     // Preloader
 
 
@@ -26,16 +12,16 @@ finish_d.setDate(finish_d.getDate() + 1);
 
      // ScroolTop
 
-     $(window).scroll(function () {
+     $(window).on('scroll',function () {
         var scrolling = $(this).scrollTop();
         if (scrolling > 400) {
-            $('.scrollTop').slideDown()
+            scrollTop.slideDown()
         } else {
-            $('.scrollTop').slideUp()
+            scrollTop.slideUp()
         }
     })
 
-    $('.scrollTop').click(function () {
+    scrollTop.on('click',function () {
         $('body ,html').animate({
             scrollTop: 0
         }, 2000)
@@ -63,5 +49,24 @@ finish_d.setDate(finish_d.getDate() + 1);
         currentClass:'active-nav',
         scrollSpeed:2000,
     })
+
+     // Wow Js
+
+     new WOW().init();
+
+     // CountDwon Js
+ 
+     var element = $('#countdown-gampang');
+     var finish_d = new Date();
+ finish_d.setDate(finish_d.getDate() + 1);
+     element.CountdownGampang({
+         rampung: finish_d,
+         theme: "flat-colors-very-wide"
+     }, function(){
+         // callback that is fired when the countdown reaches 0.
+         alert("Wes Wayahe Bro :)");
+     });
+
+     $("#services .country-list").niceScroll({cursorborder:"",cursorcolor:"#00F",boxzoom:true})
 
 });

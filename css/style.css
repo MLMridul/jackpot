@@ -1,3 +1,36 @@
+/*  =====================
+
+   Template Name : Jackpot
+   Author : Kausar Hasan Mridul
+   Version : 2.0
+
+
+===========================
+ Table of Contents Starts
+==========================
+
+1  . Variables
+2  . Common Css
+3  . Preloader 
+4  . ScrollTop
+5  . Navbar
+6  . Banner
+7  . Game list
+8  . Spin
+9  . Pricing Plan
+10 . Services
+11 . Subscribe
+12 . Footer
+13 . Copyright
+
+
+=============================
+Table of Contents Ends
+===========================
+
+ */
+
+
 :root {
     --hfont: 'Anton', sans-serif;
     --pfont: 'Nunito', sans-serif;
@@ -166,14 +199,18 @@ ul {
     position: fixed;
     right: 40px;
     bottom: 40px;
-    border-radius: 50%;
     cursor: pointer;
     display: none;
     z-index: 99999;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.scrollTop:hover {
+    background: var(--hovcol);
 }
 
 .scrollTop i {
@@ -206,12 +243,7 @@ ul {
 
 .navbar .navbar-brand {
     top: -70px;
-    /* left: 0; */
 }
-
-/* .navbar .navbar-brand img {}
-
-.navbar .navbar-nav {} */
 
 .navbar .navbar-nav .nav-item {
     margin-right: 35px;
@@ -265,14 +297,6 @@ ul {
     padding-top: 260px;
     padding-bottom: 250px;
 }
-
-/* #banner .banner-bg {}
-
-#banner .banner-bg img {}
-
-#banner .banner-item {}
-
-#banner .banner-text {} */
 
 #banner .banner-text h4 {
     font-family: var(--pfont);
@@ -440,12 +464,6 @@ ul {
     background: var(--bacol2);
 }
 
-/* #spin .spin-image {}
-
-#spin .spin-image img {}
-
-#spin .spin-text {} */
-
 #spin .spin-text h4 {
     margin-top: 70px;
     margin-bottom: 50px !important;
@@ -575,10 +593,6 @@ ul {
     font-size: 14px;
 }
 
-/* #pricing .price-item .feature-list {}
-
-#pricing .price-item .feature-list ul {} */
-
 #pricing .price-item .feature-list ul li {
     font-family: var(--pfont);
     font-weight: 600;
@@ -620,7 +634,7 @@ ul {
 
 /* #services #heading {} */
 
-#services #heading::after {
+#services .heading::after {
     content: '';
     position: absolute;
     bottom: -35px;
@@ -631,7 +645,7 @@ ul {
     box-shadow: 0 1px #2f0a5d;
 }
 
-#services #heading h4 {
+#services .heading h4 {
     font-size: 40px;
     margin-bottom: 30px !important;
 }
@@ -757,15 +771,15 @@ ul {
     margin-top: -18px !important;
 }
 
-
-
-/* #services .tournament .tournament-item .country-list {}
-
-#services .tournament .tournament-item .country-list ul {} */
+#services .tournament .tournament-item .country-list {
+    height: 300px;
+    overflow-y: scroll;
+}
 
 #services .tournament .tournament-item .country-list ul li {
     font-family: var(--pfont);
     position: relative;
+    padding-right: 10px !important;
 }
 
 #services .tournament .tournament-item .country-list ul li::after {
@@ -785,8 +799,6 @@ ul {
     font-size: 16px !important;
 }
 
-/* #services .tournament .tournament-item .country-list ul li img {} */
-
 #services .tournament .tournament-item .country-list ul li {
     font-family: var(--pfont);
     padding: 18px 0;
@@ -798,7 +810,7 @@ ul {
 
 
 /* ===================
-  subscribe Css Starts
+  Subscribe Css Starts
 ================== */
 
 #subscribe {
@@ -811,7 +823,6 @@ ul {
     position: relative;
 }
 
-/* #subscribe .sub {} */
 
 #subscribe h4 {
     font-family: var(--hfont);
@@ -857,9 +868,6 @@ ul {
     color: #3a0090;
 }
 
-/* #subscribe .payment {}
-
-#subscribe .payment ul {} */
 
 #subscribe .payment ul li {
     margin-right: 20px;
@@ -870,7 +878,7 @@ ul {
 }
 
 /* ===================
-  subscribe Css Ends
+  Subscribe Css Ends
 ================== */
 
 /* ===================
@@ -882,10 +890,6 @@ ul {
     padding: 60px 0;
     background: var(--bacol1);
 }
-
-/* #footer {}
-
-#footer .about-heading {} */
 
 #footer .about-heading h4 {
     font-family: var(--hfont);
@@ -937,20 +941,12 @@ ul {
     text-shadow: 0 5px #661355;
 }
 
-/* #footer .about-item-2 {}
-
-#footer .about-item-2 ul {} */
-
 #footer .about-item-2 ul li {
     font-family: var(--pfont);
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 18px;
 }
-
-/* #footer .about-item-3 {}
-
-#footer .about-item-3 ul {} */
 
 #footer .about-item-3 ul li {
     display: flex;
@@ -961,8 +957,6 @@ ul {
 #footer .about-item-3 ul li:last-child {
     margin-bottom: 0;
 }
-
-/* #footer .about-item-3 ul li img {} */
 
 #footer .about-item-3 ul li p {
     font-family: var(--pfont);

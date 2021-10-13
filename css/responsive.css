@@ -420,7 +420,11 @@
      Extra Large Device Starts
 =========================== */
 
-@media(min-width:1200px) {}
+@media(min-width:1400px) {
+    #banner .banner-text h4 {
+        padding-left: 80px;
+    }
+}
 
 /*  ==========================
      Extra Large Device Ends
